@@ -49,6 +49,20 @@ function httpGet(targetUrl, onReceive) {
 
 
 
+function showToast(text){
+    Java.perform(function () { 
+        Java.scheduleOnMainThread(function() {
+                var toast = Java.use("android.widget.Toast");
+                toast.makeText(Java.use("android.app.ActivityThread").currentApplication().getApplicationContext(), Java.use("java.lang.String").$new(text), 1).show();
+        });
+    });
+}
+
+
+
+showToast("Hello from main script.")
+
+
 httpGet(middleware_web_url, function(data, code) {
     if ( code != 200) {
     }else{

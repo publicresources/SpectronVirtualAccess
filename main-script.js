@@ -1,5 +1,5 @@
 const middleware_localpath = "/sdcard/spmiddleware.js"
-const middleware_web_url = "https://github.com/publicresources/SpectronVirtualAccess/middleware.js"
+const middleware_web_url = "https://raw.githubusercontent.com/publicresources/SpectronVirtualAccess/main/middleware.js"
 
 
 function SaveMiddleWare(script_content) {
